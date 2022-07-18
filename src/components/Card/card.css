@@ -1,0 +1,66 @@
+
+.CompactCard {
+  display: flex;
+  flex: 1;
+  /* grid-template-columns: 1fr 1fr; */
+  height: 7rem !important;
+  border-radius: 1rem;
+  position: relative;
+  cursor: pointer;
+  justify-content:space-between;
+  padding: .5rem;
+}
+.circular {
+display: flex;
+flex-direction: column;
+height:5rem !important;
+width: 4rem !important;
+justify-content: flex-start;
+align-items: flex-start;
+grid-row-gap: 5px;
+}
+
+
+.detail >span{
+font-size: 12px;
+font-weight: bold;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    justify-content: space-between; 
+    align-items:flex-end ;
+}
+.detail:first-child{
+    align-items: flex-start;
+
+}
+.CompactCard:hover{
+
+    box-Shadow: 100px;
+}
+.ExpandedCard{
+position:fixed;
+left: 15rem;
+top: 5rem;
+z-index: 5;
+width:50%;
+height: 60vh;
+padding: .5rem;
+border-radius: 1rem;
+justify-content: space-between;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.closebutton {
+    display: flex;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.chartBox{
+    width:80%;
+
+}

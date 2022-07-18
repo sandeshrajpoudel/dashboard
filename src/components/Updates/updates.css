@@ -1,0 +1,23 @@
+.Updates {
+    display: flex;
+    flex-direction: column;
+  width: 95%;
+  background: whitesmoke;
+  border-radius: 0.7rem;
+  padding: .5rem;
+  gap: 1rem;
+  font-size: 13px;
+  margin-top: .7rem;
+}
+.update{
+    display: flex;
+    gap:.5rem;
+
+}
+.update img{
+    width: 3rem;
+    height: 3rem;
+}
+.notification > div > span:first-child{
+    font-weight: bold;
+}

@@ -1,0 +1,32 @@
+.Navbar{
+display:flex;
+flex-direction: row;
+gap: 1rem;
+height: 2rem;
+}
+
+li{
+    display: flex;
+    padding: .2rem;
+    margin-left: 1rem;
+    height: 2rem;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    gap: .5rem;
+    cursor: pointer;
+
+}
+.navspan{
+    padding: .2rem;
+    align-self: baseline;
+}
+li:visited {
+    color:var(--activeItem);
+  }
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+

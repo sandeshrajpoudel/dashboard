@@ -1,0 +1,59 @@
+:root {
+  --yellow: linear-gradient(180deg, #e99816 -146.42%, #a59c1f -46.42%);
+  --orange: #ff7f07fd;
+  --black: #3b3d46;
+  --gray: #5a6fad;
+  --purple: linear-gradient(180deg, #771049d0 0%, #631c96 98%);
+   --pink: #21b6b6e1;       /*   changed colour texture leter*/
+  --glass: rgba(128, 87, 87, 0.24);
+  --boxShadow: 0px 19px 60px rgba(2, 0, 0, 0.39);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --activeItem: #89cfbae0;
+}
+*{
+box-sizing: border-box;
+margin:0;
+padding: 0;
+scrollbar-width: none;
+
+}
+.App{
+  font-family: 'Inter', sans-serif; 
+  background: linear-gradient(
+    106.37deg,
+    #cec0ad 29.63%,
+    #ccbcab 51.55%,
+    #c9beb1 90.85%
+  );
+  height: 100vh;
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+.AppContainer{
+  display:grid;
+  /* as the view is grid ... divide the 
+  app into 3 section as, sidebar, middle,
+   rightside  & give them certain width*/
+   grid-template-columns: 15% 60% auto;
+   gap: 1rem;
+  height: 99%;
+  width: 99%;
+  border-radius: 1rem;
+  background-color: var(--glass);
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+  .AppContainer{
+    grid-template-columns: 10% 60% auto;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+  }
+  
+}
